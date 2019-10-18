@@ -1,0 +1,136 @@
+<!doctype HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página de Acesso</title>
+    <meta charset="utf-8">
+</head>
+<style>
+h1{
+	font-family: Forte;
+	font-size:20px;
+	background-color: green;
+    color: white;
+}
+    form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    background-color: green;
+    }
+    label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+
+    height: 5em;
+
+    resize: vertical;
+}
+.button {
+    padding-left: 90px;
+}
+button {
+    margin-left: .5em;
+}
+body{
+	background-color:#FF8C00 ;
+}
+fieldset{
+    background-color: green;
+    border-color: green;
+}
+   legend{
+    font-family: Segoe UI Black;
+    color: white;
+   }
+   label{
+    font-family: Segoe UI Black;
+    color: white;
+   }
+   input{
+    border-radius: 10px;
+    font-family: Segoe UI Black;
+   }
+   button{
+    color: black;
+    border-radius: 10px;
+    font-family: Segoe UI Black;
+   background-color: white;
+   }
+   #button :hover{
+    color: orange; 
+   }
+   #menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+    font-family:Segoe UI Black; 
+}
+#menu ul li { display: inline; }
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#EDEDED;
+    color: black;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: orange;
+    border-bottom:3px solid green;
+}
+</style>
+<body>
+	<center>
+		<h1>Login</h1>
+        <nav id="menu">
+    <ul>
+        <li><a href="..\html\index.html">Home</a></li>
+        <li><a href="..\html\cadastro.html">Login</a></li>
+        <li><a href="..\html\Estádios.html">Estádios</a></li>
+        <li><a href="..\html\titulos.html">Títulos</a></li>
+    </ul>
+</nav>
+<br><br/>
+</center>
+	<form>
+   
+		<fieldset>
+			<legend>Insira seu e-mail e senha :</legend>
+    <div>
+        <label for="nome">E-mail:</label>
+        <input type="text" name="nome" placeholder="Informe aqui o seu E-mail" />
+    </div>
+    <br><br/>
+    <div>
+        <label for="password">Senha:</label>
+        <input type="password" id="email" />
+    </div>
+    <br><br/>
+    <div id="button">
+        <button type="submit">Efetuar login</button>
+        <button type="submit">Cancelar</button>
+    </div>
+</fieldset>
+</form>
+
+</body>
+</html>
